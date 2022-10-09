@@ -14,4 +14,4 @@ var wa="helloi";
 console.log(wa);
 const num=45;
 console.log(num);
-const num2;//produce error bcoz const must be initialized during declaration.
+//const num2;//produce error bcoz const must be initialized during declaration.
