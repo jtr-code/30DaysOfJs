@@ -6,11 +6,11 @@ console.log(wa);
 
 {
 
-    var wa=67;
+    let wa=67;
  
     console.log(wa)
 }
-var wa="helloi";
+let wa="helloi";//produces error becoz of let 
 console.log(wa);
 const num=45;
 console.log(num);
