@@ -1,7 +1,7 @@
 var a=20;
 var a=10;
 console.log(a);
-var wa=100;
+var wa=10110;
 console.log(wa);
 
 {
@@ -10,7 +10,7 @@ console.log(wa);
  
     console.log(wa)
 }
-let wa="helloi";//produces error becoz of let 
+let waa="helloi";//produces error becoz of let 
 console.log(wa);
 const num=45;
 console.log(num);
