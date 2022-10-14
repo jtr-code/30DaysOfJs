@@ -3,7 +3,7 @@
 
 
 const prompt = require("prompt-sync")();
-/*
+
 let mark = {
     Jishnu: 99,
     Ajay: 88,
@@ -25,7 +25,7 @@ for(i=0;i<n;i++){
         console.log("Your Prediction was Correct...");
         break;
     }
-}*/
+}
 
 //Program to find the mean of 4 numbers using Functions.
 
