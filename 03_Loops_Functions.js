@@ -1,7 +1,7 @@
 //Program to find the sum of 1st n natural numbers;
 
 const prompt = require("prompt-sync")();
-/*
+
 let sum = 0;
 let n = prompt("Enter the value of n: ");
 n = Number.parseInt(n);
@@ -28,7 +28,7 @@ for (let a in object) {
 
 for(let b of "Jishnu"){
     console.log(b); //iterate values of object
-}*/
+}
 
 //////////////////////////////////////////////////while loop////////////////////////////////////////////////////////////
 
@@ -43,9 +43,7 @@ while(b<a){
 
 
 /////////////////////////////////////////////////////do while////////////////////////////////////////////////////////
-// let c=prompt("Enter a value: ");
-// c=Number.parseFloat(c);
-let d=10;
+
 do{
     console.log(d);
     d++;
