@@ -43,9 +43,9 @@ console.log(num.slice(2));//[ 33, 44, 55 ,66 ,77 ]
 
 console.log(num.slice(2, 3));//[33]
 
-console.log(num.slice(1,5));//[ 22, 33, 44, 55 ],starting from 1 to postion 4;
+console.log(num.slice(1, 5));//[ 22, 33, 44, 55 ],starting from 1 to postion 4;
 
-console.log(num.slice(0,6))//[ 11, 22, 33, 44, 55, 66 ]
+console.log(num.slice(0, 6))//[ 11, 22, 33, 44, 55, 66 ]
 
 
 ////reverse//////////////////////reverse the soring to the source array.
@@ -56,3 +56,11 @@ console.log(num);
     77, 66, 55, 44,
     33, 22, 11
   ]*/
+
+//concat/////////////////////////
+
+let name = ["Jtr", "Jishnu"];
+let newName = ["Ajay", "Balan"];
+
+name.concat(newName)
+console.log(name.concat(newName))//[ 'Jtr', 'Jishnu', 'Ajay', 'Balan' ]
