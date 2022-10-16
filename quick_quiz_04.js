@@ -2,5 +2,11 @@
 
 let arr=['123','Jishnu','Ajay','Anurag'];
 for(i=0;i<arr.length;i++){
-    console.log(arr[i]);
+    console.log(arr[i]); 
+    
 }
+/*output
+123
+Jishnu
+Ajay
+Anurag*/
