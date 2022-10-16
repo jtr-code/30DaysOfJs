@@ -25,7 +25,7 @@ console.log(array.length)//the array size will not reduce even if we use the del
 
 
 let newArray = [1, 2, 3, 4, 5];
-newArray.splice(2,3,34,35,36,56,5);//(Position to add,No. of elements to remove,elements to be added....);(pos of 2,deleting the elements 3,4,5 then adding elements to that place).
+newArray.splice(2, 3, 34, 35, 36, 56, 5);//(Position to add,No. of elements to remove,elements to be added....);(pos of 2,deleting the elements 3,4,5 then adding elements to that place).
 console.log(newArray)
 
 /*output
@@ -35,3 +35,24 @@ console.log(newArray)
 ]
 */
 
+///////////slice///////////slice out a piece from an array.It create new array.
+
+const num = [11, 22, 33, 44, 55, 66, 77];
+
+console.log(num.slice(2));//[ 33, 44, 55 ,66 ,77 ]
+
+console.log(num.slice(2, 3));//[33]
+
+console.log(num.slice(1,5));//[ 22, 33, 44, 55 ],starting from 1 to postion 4;
+
+console.log(num.slice(0,6))//[ 11, 22, 33, 44, 55, 66 ]
+
+
+////reverse//////////////////////reverse the soring to the source array.
+
+num.reverse();
+console.log(num);
+/*[
+    77, 66, 55, 44,
+    33, 22, 11
+  ]*/
