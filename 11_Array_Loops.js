@@ -24,3 +24,11 @@ num.forEach((element) => {
 
 })
 console.log(num);//[1, 2, 3, 4, 5]
+
+/////////////////////////////////////Array.from/////////////////It creates an array from any other object.///////////////////////////////
+
+let name="Jishnu";
+
+let arrName=Array.from(name);
+
+console.log(arrName);//[ 'J', 'i', 's', 'h', 'n', 'u' ]
