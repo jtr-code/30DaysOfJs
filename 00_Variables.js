@@ -10,7 +10,7 @@ console.log(wa);
  
     console.log(wa)
 }
-let waa="helloi";//produces error becoz of let 
+//let wa="helloi";//produces error becoz of let 
 console.log(wa);
 const num=45;
 console.log(num);

@@ -6,7 +6,7 @@ let compare = (a, b) => {
     return a - b;
 }
 
-console.log(array.sort(compare));//created a compare function to fix the sorting issue in numbers.
+console.log(array.sort(compare));//created a compare function to fix the sorting issue in numbers. //[ 1, 10, 11, 22, 1232 ]
 
 //print in descending order
 
