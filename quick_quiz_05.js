@@ -1,5 +1,3 @@
-
-
 // Create an array of no.s and take input from the user to add the number to this array.////////////////////////////
 
 const prompt = require("prompt-sync")();
@@ -20,7 +18,7 @@ console.log(numArray);
   ]*/
 
 
-////////////////Keeping adding numbers to the array until 0 is added to the array./////////////////////////////
+//Keeping adding numbers to the array until 0 is added to the array./////////////////////////////
 
 let num = [1, 2, 3, 4, 5];
 let a;
@@ -33,7 +31,7 @@ do {
 
 console.log(num);
 
-///////////////Filter the numbers that are divisible by 10 from a given array.///////////////////////////////////////////////////
+//Filter the numbers that are divisible by 10 from a given array.///////////////////////////////////////////////////
 
 let arr = [20, 30, 1, 4, 55, 40];
 
@@ -45,7 +43,7 @@ let filteredResult = arr.filter(divisible);
 
 console.log(filteredResult);//[ 20, 30, 40 ]
 
-/////////////////Create an array of square of given numbers.//////////////////////////////////////////////////////////////////////////
+//Create an array of square of given numbers.//////////////////////////////////////////////////////////////////////////
 
 let newArr = [1, 3, 5, 7, 9];
 
