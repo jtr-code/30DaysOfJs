@@ -20,3 +20,4 @@ do {
 } while (randomNum != valueFromUser);
 
 console.log(`Congrats!! You Guessed Number ${randomNum} is correct and your score is ${100 - chances}`);
+

@@ -52,7 +52,7 @@ let squareArr = newArr.map((e) => {
 })
 console.log(squareArr);//[ 1, 9, 25, 49, 81 ]
 
-//Use reduce to calculate the factorial of given number from an array of first n natuaral numbers.n being the no. whose factorial is needed to be calculated.
+//Use reduce to calculate the factorial of given number from an array of first n natural numbers.n being the no. whose factorial is needed to be calculated.
 
 let array = [1, 2, 3, 4, 5];
 
