@@ -58,8 +58,8 @@ console.log(squareArr);//[ 1, 9, 25, 49, 81 ]
 
 let array = [1, 2, 3, 4, 5];
 
-let factValue=array.reduce((num1,num2)=>{
-    return num1*num2;
+let factValue = array.reduce((num1, num2) => {
+    return num1 * num2;
 })
 console.log(factValue);//120
 
