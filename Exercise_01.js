@@ -6,18 +6,19 @@ const PromptSync = require("prompt-sync")();
 let randomNum = Math.floor(Math.random() * 100) + 1;
 let chances = 0;
 let valueFromUser;
-console.log(randomNum);//testing
+console.log(randomNum); //testing
 do {
-    valueFromUser = PromptSync("Enter the guessed number from 1-100: ");
-    valueFromUser = Number.parseInt(valueFromUser);
-    chances++;
-    if (valueFromUser > randomNum) {
-        console.log(`Your number ${valueFromUser} is greater`);
-    } else if (valueFromUser < randomNum) {
-        console.log(`Your number ${valueFromUser} is lesser`);
-    }
-    // console.log(`Now your Score is ${100 - chances}`);
+  valueFromUser = PromptSync("Enter the guessed number from 1-100: ");
+  valueFromUser = Number.parseInt(valueFromUser);
+  chances++;
+  if (valueFromUser > randomNum) {
+    console.log(`Your number ${valueFromUser} is greater`);
+  } else if (valueFromUser < randomNum) {
+    console.log(`Your number ${valueFromUser} is lesser`);
+  }
+  // console.log(`Now your Score is ${100 - chances}`);
 } while (randomNum != valueFromUser);
 
-console.log(`Congrats!! You Guessed Number ${randomNum} is correct and your score is ${100 - chances}`);
-
+console.log(
+  `Congrats!! You Guessed Number ${randomNum} is correct and your score is ${100 - chances}`
+);
