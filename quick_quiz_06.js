@@ -1,5 +1,5 @@
 //*Note
-//This not works in Vscode because of window's property like alert(),confirm() is used..
+//This code shows error in Vscode because of window's property like alert(),confirm() is used..
 
 //Write a program using prompt function to take input as age as a value from user and use alert to tell him if he can drive.///////////////////////////////////////////////
 
