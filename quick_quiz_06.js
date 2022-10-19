@@ -17,7 +17,7 @@ if (age > 18) {
 
 //In above qn use confirm to ask user if he want to see the prompt again////////////////////////////////////////////////////////////////////////////////////////////////
 
-// let runAgain = true;
+let runAgain = true;
 while (runAgain) {
     let age = prompt("Enter your age: ");
     age = Number.parseInt(age);

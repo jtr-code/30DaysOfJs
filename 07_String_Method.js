@@ -12,10 +12,10 @@ console.log(x);//AJAY
 let y = name1.toLowerCase();
 console.log(y);//ajay
 
-let z = name1.replace("Aj", "BZ");
+let z=name1.replace("Aj","BZ");
 console.log(z);//BZay,change the "aj" character to BZ.
 
-let p = "           JTR           ";
+let p="           JTR           ";
 console.log(p.trim());//Remove whitespace on both sides(if no character there).eg:"    jtr   !" output:jtr   !.
 
 console.log(name[0]);//J
