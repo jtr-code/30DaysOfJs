@@ -1,6 +1,6 @@
-const prompt=require("prompt-sync")();
+const prompt = require("prompt-sync")();
 let foo = prompt("pick a no from 0 to 5: ");
-foo=Number.parseInt(foo);
+foo = Number.parseInt(foo);
 let output = 'Output: ';
 switch (foo) {
   case 0:
