@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>innerHTML and outerHTML</title>
+
+</head>
+
+<body>
+  <div id="firstid" class="firstclass">This is first id</div>
+
+  <span id="second-id">Hello This is 2nd area</span>
+
+  <script>
+    let first_id = document.getElementById('firstid').innerHTML
+    console.log(first_id);//This is first id
+
+    //////////////////////////////////////////// getAttribute Method////////////////////////////////////
+
+    let a = firstid.getAttribute("class");
+    console.log(a)//firstclass
+
+    let a1 = firstid.getAttribute("id");
+    console.log(a1)//firstid
+
+
+    //////////////////////////////////////////hasAttribute method////////////////////////////////////////////////////
+
+    let b = firstid.hasAttribute("id");
+    console.log(b);//true
+
+
+    /////////////////////////////////////////////////////////////setAttribute/////////////////////////////////////////////
+
+    // firstid.setAttribute("hidden", "true ");
+
+    firstid.setAttribute("class", "firstfirstestclass")//<div id="firstid" class="firstfirstestclass">This is first id</div>
+
+      ///////////////////////////////////////removeAttribute//////////////////////////////////////////////////////////////
+
+
+      (firstid.removeAttribute("class"))//<div id="firstid">This is first id</div>
+
+      (firstid.removeAttribute("id"))//<div>This is first id</div>
+  </script>
+
+</html>
