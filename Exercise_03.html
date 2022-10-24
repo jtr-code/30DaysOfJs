@@ -1,0 +1,68 @@
+<!------------------ //Show different alert when different buttons are clicked---------------------------- -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google,Alexa,Siri</title>
+</head>
+
+<body>
+    <button onclick="alert('OK Google')">OKGoogle</button>
+    <button onclick="alert('OK Alexa')">OKAlexa</button>
+    <button onclick="alert('OK Siri')">OKSiri</button>
+</body>
+
+</html> 
+
+<! -------------------------Create Bookmark of website using href------------------------------ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+</head>
+
+<body>
+
+
+    <!-- <a href="https://www.google.com" target="_blank"> -->
+    <!-- <a href="https://www.twitter.com" id="twitter" target="_blank"></a> -->
+    <!-- <a href="https://www.fb.com"  target="_blank"></a> -->
+
+    <button id="google">Google</button>
+
+
+    <button id="Facebook">Facebook</button>
+
+    <button id="twitter">Twitter</button>
+
+    <script>
+        document.getElementById("google").addEventListener("click", function () {
+            console.log("google");
+            window.location = "https://www.google.com ";
+            win.focus();
+        })
+        document.getElementById("Facebook").addEventListener("click", function () {
+            console.log("facebook");
+            window.location = "https://www.fb.com ";
+            win.focus();
+        })
+        document.getElementById("twitter").addEventListener("click", function () {
+            console.log("twitter");
+            window.location = "https://www.twitter.com ";
+            win.focus();
+        })
+
+    </script>
+</body>
+
+</html>
