@@ -45,7 +45,7 @@ getDataFromApi((value) => {
     getDataFromApi2((api2val) => {
         // console.log(value + api2val);
         getDataFromApi3((api3val) => {
-            console.log(value + api2val + api3val);
+            console.log(value + api2val + api3val);//callback hell(takes total 6 seconds to print the values)
         })
     })
 })
