@@ -79,3 +79,21 @@ promiseAllSettled.then((res) => {
   { status: 'fulfilled', value: [ 'React', 'Vue' ] }
 ]*/
 })
+
+
+///Mutliple Handling//
+
+
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello")
+  }, 2000);  
+})
+
+p1.then((value) => {
+    console.log(value)
+}).then(()=>{
+    return new Promise((resolve, reject) => {
+        alert("Good Morning")
+    })
+})
