@@ -24,4 +24,12 @@
 // })
 
 
+const promise1 = new Promise((resolve, reject) => {
+    console.log("Promise 1");
+    resolve(["Javascript", "Java"]);
+})
 
+const promise2 = new Promise((resolve, reject) => {
+console.log("Promise 2");
+resolve(["React", "Vue"]);
+})
