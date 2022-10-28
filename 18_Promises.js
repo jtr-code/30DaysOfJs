@@ -28,14 +28,14 @@
 
 const promise1 = new Promise((resolve, reject) => {
     console.log("Promise 1");
-    resolve(["Javascript", "Java"]);
-    // reject("API Failed!(Promise1)");
+    // resolve(["Javascript", "Java"]);
+    reject("API Failed!(Promise1)");
 })
 
 const promise2 = new Promise((resolve, reject) => {
     console.log("Promise 2");
-    // resolve(["React", "Vue"]);
-    reject("API Failed!(Promise2)");
+    resolve(["React", "Vue"]);
+    // reject("API Failed!(Promise2)");
 })
 // promise1.then((res) => {
 //     console.log(res)
@@ -57,7 +57,7 @@ promiseAll.then((res) => {
 })
 
 
- const promiseAny = Promise.any([promise1, promise2]);  //promise.any  //return only single promise which 1st complete the operation
+ const promiseAny = Promise.any([promise1, promise2]);  //promise.any  //return only single promise which 1st resolve the operation
 promiseAny.then((res) => {
     console.log(res)
 }).catch((err) => {
@@ -80,20 +80,27 @@ promiseAllSettled.then((res) => {
 ]*/
 })
 
+const promiseRace = Promise.race([promise1, promise2]);  //promise.race  //return only 1st promise if it resolved the operation
+promiseRace.then((res) => {
+    console.log(res)//no output becoz the 1st promise is not resolved
+}).catch((err) => {
+    console.log("Race"+err);//RaceApi Failed
+})
+
 
 ///Mutliple Handling//
 
 
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Hello")
-  }, 2000);  
-})
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Hello")
+//   }, 2000);  
+// })
 
-p1.then((value) => {
-    console.log(value)
-}).then(()=>{
-    return new Promise((resolve, reject) => {
-        alert("Good Morning")
-    })
-})
+// p1.then((value) => {
+//     console.log(value)
+// }).then(()=>{
+//     return new Promise((resolve, reject) => {
+//         // alert("Good Morning")
+//     })
+// })
