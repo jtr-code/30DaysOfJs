@@ -1,6 +1,27 @@
 {
   "dependencies": {
     "install": "^0.13.0",
+    "node-fetch": "^3.2.10",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "javascript",
+  "description": "Basics to Advance Fundamentals in JavaScript",
+  "version": "1.0.0",
+  "main": "00_Variables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtrtricks/30DaysOfJs.git"
+  },
+  "keywords": [
+    "30DaysofJs"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtrtricks/30DaysOfJs/issues"
+  },
+  "homepage": "https://github.com/jtrtricks/30DaysOfJs#readme"
 }
