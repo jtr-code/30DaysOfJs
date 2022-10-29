@@ -12,14 +12,26 @@ const loadScript = (src) => {
 
 }
 
+//.then way-------------
 
-let a = loadScript('https://jsonplaceholder.typicode.com/todos/1');
-a.then((value) => {
-    console.log(value);
-    alert("Loaded")
-}).catch((err) => {
-    console.log(err)
-})
+
+// let a = loadScript('https://jsonplaceholder.typicode.com/todos/1');
+// a.then((value) => {
+//     console.log(value);
+//     alert("Loaded")
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+//async/await way-------------------------------------------
+
+const fetchUrl = async () => {
+    const valueLoadScript = await loadScript('https://jsonplaceholder.typicode.com/todos/1');
+    console.log(valueLoadScript);
+}
+fetchUrl();
+
+
 
 
 ///////////////////////////////Use the async await with above problem///////////////////////////////////////////////////////////////////////////////
@@ -64,7 +76,7 @@ console.time()
 const promise0 = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Its solved at 2 seconds");
-    }, 2000); 
+    }, 2000);
 })
 
 const promise1 = new Promise((resolve, reject) => {
@@ -87,10 +99,10 @@ const value = async () => {
     // // console.log(promise0Value, promise1Value, promise2Value);//it tooks 4+seconds
     // // console.log("end")
     console.log("start")
-    let promise0Value =  promise0;
-    let promise1Value =  promise1;
-    let promise2Value =  promise2;
-    let promiseAll =await Promise.all([promise0Value, promise1Value, promise2Value]);//it took 0.561ms
+    let promise0Value = promise0;
+    let promise1Value = promise1;
+    let promise2Value = promise2;
+    let promiseAll = await Promise.all([promise0Value, promise1Value, promise2Value]);//it took 0.561ms
     console.log(promiseAll);
     console.log("end")
     console.timeEnd();
