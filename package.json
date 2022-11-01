@@ -8,6 +8,7 @@
   "description": "Basics to Advance Fundamentals in JavaScript",
   "version": "1.0.0",
   "main": "00_Variables.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
