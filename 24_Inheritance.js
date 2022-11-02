@@ -24,3 +24,19 @@ let obj2 = new Child();
 
 obj1.displayDetails();
 obj2.displayAdditional();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class Vehicle {
+    Vehiclerun() {
+        console.log("Vehicle is running");
+    }
+}
+class Car extends Vehicle {
+    CarRun() {
+        console.log("Car is running");
+    }
+}
+let obj = new Car();
+obj.Vehiclerun()//Calling Vehiclerun method with Car object but cant call Vehicle object for CarRun();
