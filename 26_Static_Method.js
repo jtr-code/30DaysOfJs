@@ -8,7 +8,7 @@ class Student {
     }
     static studentAge(age) {
         return age;
-
+        
     }
 }
 
