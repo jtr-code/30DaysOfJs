@@ -32,4 +32,4 @@ add5 and add10 are both closures. They share the same function body definition, 
 
 
 
-// link:https://jsfiddle.net/vnkuZ/7726/
+//  link:https://jsfiddle.net/vnkuZ/7726/
